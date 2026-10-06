@@ -1,0 +1,11 @@
+read_verilog -sv and_gate.sv
+
+hierarchy -top and_gate
+
+proc
+opt
+
+techmap
+opt
+stat
+write_verilog -noattr synthesized_and_gate.v
