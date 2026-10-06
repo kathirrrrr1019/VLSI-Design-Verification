@@ -1,0 +1,7 @@
+read_verilog or_gate.sv
+hierarchy -top or_gate
+proc
+opt
+techmap
+opt
+write_verilog synthesized_or_gate.v
