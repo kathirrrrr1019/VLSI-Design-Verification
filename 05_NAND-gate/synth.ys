@@ -1,0 +1,7 @@
+read_verilog -sv nand_gate.sv
+hierarchy -top nand_gate
+proc
+opt
+techmap
+opt
+write_verilog synthesized_nand_gate.v
