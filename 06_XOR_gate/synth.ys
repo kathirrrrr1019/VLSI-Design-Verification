@@ -1,0 +1,7 @@
+read_verilog -sv xor_gate.sv
+hierarchy -top xor_gate
+proc
+opt
+techmap
+opt
+write_verilog synthesized_xor_gate.v
