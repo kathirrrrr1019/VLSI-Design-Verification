@@ -1,0 +1,9 @@
+read_verilog -sv mux2to1.sv
+hierarchy -top mux2to1
+proc
+opt
+techmap
+opt
+abc -g simple
+clean
+write_verilog synthesized_mux2to1.v
