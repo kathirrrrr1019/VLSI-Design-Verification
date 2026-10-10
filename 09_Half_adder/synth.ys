@@ -1,0 +1,9 @@
+read_verilog -sv half_adder.sv
+hierarchy -top half_adder
+proc
+opt
+techmap
+opt
+abc -g simple
+clean
+write_verilog synthesized_half_adder.v
